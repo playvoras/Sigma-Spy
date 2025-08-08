@@ -3,8 +3,8 @@ local Configuration = {
 	UseWorkspace = false, 
 	NoActors = false,
 	FolderName = "Sigma Spy",
-	RepoUrl = "https://raw.githubusercontent.com/depthso/Sigma-Spy/refs/heads/main",
-	ParserUrl = "https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main/dist/Main.luau"
+	RepoUrl = "https://raw.githubusercontent.com/playvoras/Sigma-Spy/refs/heads/main",
+	ParserUrl = "https://raw.githubusercontent.com/playvoras/Roblox-parser/refs/heads/main/dist/Main.luau"
 }
 
 --// Load overwrites
@@ -114,4 +114,5 @@ Ui:BeginLogService()
 
 --// Load hooks
 local ActorCode = Files:MakeActorScript(Scripts, ChannelId)
+
 Hook:LoadHooks(ActorCode, ChannelId)
