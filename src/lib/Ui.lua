@@ -583,7 +583,7 @@ function Ui:MakeEditorTab(InfoSelector)
 				Text = "Copy",
 				Callback = function()
 					local Script = CodeEditor:GetText()
-					self:SetClipboard(Script)
+					writefile("test.txt", Script)
 				end
 			},
 			{
@@ -1365,5 +1365,6 @@ function Ui:CreateLog(Data: Log)
 		self:SetFocusedRemote(Data)
 	end
 end
+
 
 return Ui
